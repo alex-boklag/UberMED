@@ -1,0 +1,42 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-header {
+    background-color: rgb(245, 245, 245);
+}
+.main-sidebar {
+    background-color: #454855;
+    color: white;
+}
+.main-content {
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
+}
+
+.cards-header {
+    color: #0000008f;;
+}
+.cards-list {
+    padding-left: 0;
+    margin: 0;
+}
+.cards-item {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.work-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.work-date {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
