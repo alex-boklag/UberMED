@@ -26,8 +26,13 @@
     border-radius: 10px;
     background-color: white;
     color: #000000ab;
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 2px 0px rgba(63, 71, 63, 0.5);
     font-size: 20px;
+}
+
+.cards-item:hover {
+    box-shadow: inset 0px 0px 0px 3px #2d302d8f;
+    cursor: pointer;
 }
 
 .work-title {
@@ -66,23 +71,27 @@
     display: inline-block;
     border-radius: 50px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 24px;
 }
 
 .work-status.pending {
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: rgba(255, 255, 0, 0.4);
     color: rgb(77, 77, 0);
 }
 
+.work-status.paid {
+    background-color: rgba(0, 0, 255, 0.2);
+    color: rgb(0, 0, 77);
+}
+
 .work-status.submitted {
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 255, 0, 0.2);
     color: rgb(6, 77, 0);
 }
 
 .first-bid {
     background: url('../images/icon-first-doctor.svg') no-repeat;
     height: 32px;
-    font-size: 18px;
 }
 
 .work-author {
