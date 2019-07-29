@@ -1,0 +1,96 @@
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: "sidebar header" "sidebar content";
+}
+
+.main-header {
+    grid-area: header;
+}
+
+.main-sidebar {
+    grid-area: sidebar;
+}
+
+.main-content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "cards-header" "cards-list";
+    padding: 30px;
+}
+
+.cards-header {
+    grid-area: cards-header;
+}
+
+.cards-list {
+    grid-area: cards-list;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(400px, 450px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-areas: "cards-header" "cards-list";
+    grid-gap: 30px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.work-title, .work-date, .work-status {
+    align-self: center;
+}
+
+.work-author {
+    align-self: flex-end;
+}
+
+.work-title {
+    margin-bottom: 5px;
+}
+
+.work-time, .work-place, .necessary-skills, .amount-requests {
+    padding-left: 37px;
+    padding-top: 6px;
+    margin-top: 15px;
+}
+
+.work-status {
+    padding: 4px 15px;
+    margin: 15px 0;
+}
+
+.first-bid {
+    padding-left: 40px;
+    padding-top: 8px;
+    margin-bottom: 15px;
+}
+
+.work-author {
+    margin-top: auto;
+}
+
+@media all and (max-width: 980px) {
+    .container {
+        display: grid;
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header" 
+            "content";
+    }
+    .main-header {
+        grid-area: header;
+    }
+    .main-sidebar {
+        grid-area: sidebar;
+    }
+    .main-content {
+        grid-area: content;
+    }
+}

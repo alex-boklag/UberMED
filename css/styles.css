@@ -1,0 +1,99 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.main-header {
+    background-color: rgb(245, 245, 245);
+}
+
+.main-sidebar {
+    background-color: #454855;
+    color: white;
+}
+
+.main-content {
+    background-color: rgb(245, 245, 245);
+}
+
+.cards-header {
+    color: #0000008f;
+}
+
+.cards-item {
+    border-radius: 10px;
+    background-color: white;
+    color: #000000ab;
+    box-shadow: inset 0px 0px 2px 0px rgba(63, 71, 63, 0.5);
+    font-size: 20px;
+}
+
+.cards-item:hover {
+    box-shadow: inset 0px 0px 0px 3px #2d302d8f;
+    cursor: pointer;
+}
+
+.work-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.work-date {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.work-time {
+    background: url('../images/icon-time.svg') no-repeat;
+    height: 32px;
+}
+
+.work-place {
+    background: url('../images/icon-hospital.svg') no-repeat;
+    height: 32px;
+}
+
+.necessary-skills {
+    background: url('../images/icon-skills.svg') no-repeat;
+    height: 32px;
+}
+
+.amount-requests {
+    background: url('../images/icon-doctor.svg') no-repeat;
+    height: 32px;
+}
+
+.work-status {
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.work-status.pending {
+    background-color: rgba(255, 255, 0, 0.4);
+    color: rgb(77, 77, 0);
+}
+
+.work-status.paid {
+    background-color: rgba(0, 0, 255, 0.2);
+    color: rgb(0, 0, 77);
+}
+
+.work-status.submitted {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: rgb(6, 77, 0);
+}
+
+.first-bid {
+    background: url('../images/icon-first-doctor.svg') no-repeat;
+    height: 32px;
+}
+
+.work-author {
+    font-size: 16px;
+}
