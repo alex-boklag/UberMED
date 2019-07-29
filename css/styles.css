@@ -1,42 +1,90 @@
 .container {
     height: 100vh;
     width: 100vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .main-header {
     background-color: rgb(245, 245, 245);
 }
+
 .main-sidebar {
     background-color: #454855;
     color: white;
 }
+
 .main-content {
     background-color: rgb(245, 245, 245);
-    padding: 30px;
 }
 
 .cards-header {
-    color: #0000008f;;
+    color: #0000008f;
 }
-.cards-list {
-    padding-left: 0;
-    margin: 0;
-}
+
 .cards-item {
     border-radius: 10px;
     background-color: white;
-    box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
-    padding: 20px;
+    color: #000000ab;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
 }
+
 .work-title {
     text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 28px;
     font-weight: bold;
 }
+
 .work-date {
     text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.work-time {
+    background: url('../images/icon-time.svg') no-repeat;
+    height: 32px;
+}
+
+.work-place {
+    background: url('../images/icon-hospital.svg') no-repeat;
+    height: 32px;
+}
+
+.necessary-skills {
+    background: url('../images/icon-skills.svg') no-repeat;
+    height: 32px;
+}
+
+.amount-requests {
+    background: url('../images/icon-doctor.svg') no-repeat;
+    height: 32px;
+}
+
+.work-status {
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.work-status.pending {
+    background-color: rgba(255, 255, 0, 0.5);
+    color: rgb(77, 77, 0);
+}
+
+.work-status.submitted {
+    background-color: rgba(0, 255, 0, 0.5);
+    color: rgb(6, 77, 0);
+}
+
+.first-bid {
+    background: url('../images/icon-first-doctor.svg') no-repeat;
+    height: 32px;
+    font-size: 18px;
+}
+
+.work-author {
+    font-size: 16px;
 }
