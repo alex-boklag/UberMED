@@ -27,7 +27,7 @@
     background-color: white;
     color: #000000ab;
     box-shadow: inset 0px 0px 2px 0px rgba(63, 71, 63, 0.5);
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .cards-item:hover {
@@ -39,17 +39,20 @@
     text-transform: uppercase;
     font-size: 28px;
     font-weight: bold;
+    color: rgba(0, 65, 0, 0.8);
 }
 
 .work-date {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: bold;
+    font-style: italic;
+    color: rgba(0, 65, 0, 0.8);
 }
 
 .work-time {
     background: url('../images/icon-time.svg') no-repeat;
-    height: 32px;
+    height: 28px;
 }
 
 .work-place {
@@ -59,34 +62,34 @@
 
 .necessary-skills {
     background: url('../images/icon-skills.svg') no-repeat;
-    height: 32px;
+    height: 28px;
 }
 
 .amount-requests {
     background: url('../images/icon-doctor.svg') no-repeat;
-    height: 32px;
+    height: 28px;
 }
 
 .work-status {
     display: inline-block;
     border-radius: 50px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .work-status.pending {
-    background-color: rgba(255, 255, 0, 0.4);
-    color: rgb(77, 77, 0);
+    background-color: rgba(255, 255, 0, 0.2);
+    color: rgba(77, 77, 0, 0.7);
 }
 
 .work-status.paid {
-    background-color: rgba(0, 0, 255, 0.2);
-    color: rgb(0, 0, 77);
+    background-color: rgba(0, 0, 255, 0.1);
+    color: rgb(0, 0, 77, 0.7);
 }
 
 .work-status.submitted {
-    background-color: rgba(0, 255, 0, 0.2);
-    color: rgb(6, 77, 0);
+    background-color: rgba(0, 255, 0, 0.1);
+    color: rgb(0, 77, 0, 0.7);
 }
 
 .first-bid {
@@ -96,4 +99,8 @@
 
 .work-author {
     font-size: 16px;
+}
+
+.work-author .date {
+    font-style: italic; 
 }
