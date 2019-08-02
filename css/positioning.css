@@ -54,10 +54,17 @@
     margin-bottom: 5px;
 }
 
-.work-time, .work-place, .necessary-skills, .amount-requests {
+.work-place {
     padding-left: 37px;
     padding-top: 6px;
     margin-top: 15px;
+}
+
+.work-time, .necessary-skills, .amount-requests {
+    padding-left: 35px;
+    padding-top: 6px;
+    margin-top: 15px;
+    margin-left: 2px;
 }
 
 .work-status {
@@ -75,7 +82,7 @@
     margin-top: auto;
 }
 
-@media all and (max-width: 980px) {
+@media all and (max-width: 768px) {
     .container {
         display: grid;
         grid-template-rows: 100px 1fr;
